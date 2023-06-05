@@ -7,4 +7,4 @@ exitを受け取るまで無限ループします。
 c++でwhileを使っての処理。
 c++でwhile(true)を使ってよいのかは不明。
 VisualStudiodeでのプロジェクト名・ファイル名の変更は、ソリューションエクスプローラーの右クリックから名前の変更。
-print処理のC++的な書き方としては、「std::cout << ""Hello, World\n";」を使用する。
+print処理のC++的な書き方としては、「std::cout << "Hello, World\n";」を使用する。
