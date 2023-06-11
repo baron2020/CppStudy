@@ -1,15 +1,21 @@
 #include <vector>
 #include <iostream>
 
-//“®“I”z—ñƒNƒ‰ƒX std::vector ‚Ìg‚¢•û
+//å‹•çš„é…åˆ—ã‚¯ãƒ©ã‚¹ std::vector ã®ä½¿ã„æ–¹
 
 int main(void) {
     std::vector<int> v;
-    v = { 1, 2, 3, 4, 5 };
+    v = { 1, 2, 3 };
 
     for (int i = 0; i < v.size(); i++)
         std::cout << v[i] << "\n";
-    std::cout << "I—¹‚µ‚Ü‚µ‚½B\n";
+    std::cout << "çµ‚äº†ã—ã¾ã—ãŸã€‚\n";
     
     return 0;
 }
+
+//å‡ºåŠ›
+//1
+//2
+//3
+//çµ‚äº†ã—ã¾ã—ãŸã€‚
