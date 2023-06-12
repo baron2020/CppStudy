@@ -6,8 +6,7 @@
 
 class ShogiBan
 {
-	//std::map<std::string, int> mp;    //  文字列 → 整数 の連想配列
-	//mp["abc"] = 123;
+
 public:
 	int EMPTY = 0;//空
 	int P = 1;//Pawn（先手の歩）
@@ -23,6 +22,9 @@ public:
 	ShogiBan() {
 		std::cout << "コンストラクタの実行" << '\n';
 		std::cout << "角：" << B << "\n";
+		//マップ
+		//std::map<std::string, int> mp;    //  文字列 → 整数 の連想配列
+		//mp["abc"] = 123;
 	}
 
 	void test_show() {
