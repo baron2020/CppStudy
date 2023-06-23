@@ -1,0 +1,38 @@
+出力開始
+7g7f,8c8d,2g2f,8d8e,8h7g,4a3b,7i8h,3c3d
+resultサイズ：8
+5g5f,8a7c,9g9f,1c1d,6g6f,9c9d,1g1f,6c6d
+resultサイズ：8
+5h6g,5a4a,6i5h,3c4b,4f4e,4d4e,6f6e,3b3c
+resultサイズ：8
+3c4d,4h4g,4d4e,2e2d,2c2d,7g1a+,p*4f,4g3h
+resultサイズ：8
+3c4d,4h4g,4d4e,2e2d,2c2d,7g1a+,p*4f,4g3h
+resultサイズ：8
+出力終了
+ベクターサイズ：5
+[i]:0 [j]:0 :7g7f
+[i]:0 [j]:1 :8c8d
+[i]:0 [j]:2 :2g2f
+[i]:0 [j]:3 :8d8e
+[i]:0 [j]:4 :8h7g
+[i]:1 [j]:0 :5g5f
+[i]:1 [j]:1 :8a7c
+[i]:1 [j]:2 :9g9f
+[i]:1 [j]:3 :1c1d
+[i]:1 [j]:4 :6g6f
+[i]:2 [j]:0 :5h6g
+[i]:2 [j]:1 :5a4a
+[i]:2 [j]:2 :6i5h
+[i]:2 [j]:3 :3c4b
+[i]:2 [j]:4 :4f4e
+[i]:3 [j]:0 :3c4d
+[i]:3 [j]:1 :4h4g
+[i]:3 [j]:2 :4d4e
+[i]:3 [j]:3 :2e2d
+[i]:3 [j]:4 :2c2d
+[i]:4 [j]:0 :3c4d
+[i]:4 [j]:1 :4h4g
+[i]:4 [j]:2 :4d4e
+[i]:4 [j]:3 :2e2d
+[i]:4 [j]:4 :2c2d
