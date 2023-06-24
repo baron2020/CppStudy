@@ -3,9 +3,8 @@
 #include <string>
 #include <vector>
 
-//test1.txt‚Ì’†g‚ğ“Ç‚İ‚İAƒJƒ“ƒ}‚Å‹æØ‚èAvector‚ÉŠi”[‚·‚éB
-//ƒxƒNƒ^[‚Ì‘S—v‘f‚ğ•\¦‚ğ‚·‚éB
-
+//test1.txtã®ä¸­èº«ã‚’èª­ã¿è¾¼ã¿ã€ã‚«ãƒ³ãƒã§åŒºåˆ‡ã‚Šã€vectorã«æ ¼ç´ã™ã‚‹ã€‚
+//ãƒ™ã‚¯ã‚¿ãƒ¼ã®å…¨è¦ç´ ã‚’è¡¨ç¤ºã‚’ã™ã‚‹ã€‚
 
 std::vector<std::string> split(std::string str) {
     std::string separator = ",";
@@ -17,29 +16,29 @@ std::vector<std::string> split(std::string str) {
     for (; pos < l && (pos = tstr.find(separator, pos)) != std::string::npos; prev = (pos += sl)) {
         result.emplace_back(tstr, prev, pos - prev);
     }
-    std::cout << "resultƒTƒCƒYF" << result.size() << '\n';
+    std::cout << "resultã‚µã‚¤ã‚ºï¼š" << result.size() << '\n';
     return result;
 }
 
 int main(){
     std::vector<std::vector<std::string>> all_v;
 
-    std::ifstream file("test1.txt");  // “Ç‚İ‚Şƒtƒ@ƒCƒ‹‚ÌƒpƒX‚ğw’è
+    std::ifstream file("test1.txt");  // èª­ã¿è¾¼ã‚€ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’æŒ‡å®š
     std::string line;
 
-    std::cout << "o—ÍŠJn" << std::endl;
-    //ÅI“_‚É’B‚·‚é‚Ü‚Å
+    std::cout << "å‡ºåŠ›é–‹å§‹" << std::endl;
+    //æœ€çµ‚ç‚¹ã«é”ã™ã‚‹ã¾ã§
     while (file) { 
-        file >> line; //file‚©‚çline‚Éƒf[ƒ^‚ğŠi”[
-        std::cout << line << std::endl; //line‚ğ•\¦
+        file >> line; //fileã‹ã‚‰lineã«ãƒ‡ãƒ¼ã‚¿ã‚’æ ¼ç´
+        std::cout << line << std::endl; //lineã‚’è¡¨ç¤º
         std::vector<std::string> temp_v = split(line);
-        //all_v‚ÌÅŒã‚É’Ç‰Á
+        //all_vã®æœ€å¾Œã«è¿½åŠ 
         all_v.push_back(temp_v);
     }
-    std::cout << "o—ÍI—¹" << std::endl;
-    std::cout << "ƒxƒNƒ^[ƒTƒCƒYF" <<all_v.size() << std::endl;
+    std::cout << "å‡ºåŠ›çµ‚äº†" << std::endl;
+    std::cout << "ãƒ™ã‚¯ã‚¿ãƒ¼ã‚µã‚¤ã‚ºï¼š" <<all_v.size() << std::endl;
 
-    //size_tF‚»‚ÌƒIƒuƒWƒFƒNƒg‚ÌƒTƒCƒY‚ğ•\Œ»‚·‚é‚Ì‚É\•ª‚È¸“x‚ğ‚Â‚±‚Æ‚ª•ÛØ‚³‚ê‚Ä‚¢‚éB
+    //size_tï¼šãã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚µã‚¤ã‚ºã‚’è¡¨ç¾ã™ã‚‹ã®ã«ååˆ†ãªç²¾åº¦ã‚’æŒã¤ã“ã¨ãŒä¿è¨¼ã•ã‚Œã¦ã„ã‚‹ã€‚
     for (size_t i = 0; i < all_v.size(); ++i) {
         for (size_t j = 0; j < all_v.size(); ++j) {
             std::cout << "[i]:" << i << " [j]:" << j << " :" << all_v[i][j] << std::endl;
